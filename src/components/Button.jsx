@@ -12,7 +12,7 @@ const Button = ({ text, className, href = "#projects" }) => {
           window.scrollTo({ top, behavior: "smooth" });
         }
       }}
-      className={`${className ?? ""} inline-flex items-center justify-center rounded-md bg-white text-black text-sm font-medium hover:bg-gray-200 transition-colors duration-200`}
+      className={`${className ?? ""} inline-flex items-center justify-center rounded-md bg-white text-black text-sm font-medium hover:bg-gray-100 active:scale-[0.98] transition-all duration-200`}
     >
       {text}
     </a>

@@ -8,6 +8,10 @@ const navLinks = [
     link: "#skills",
   },
   {
+    name: "Experience",
+    link: "#experience",
+  },
+  {
     name: "Contact",
     link: "#contact",
   },
@@ -93,9 +97,27 @@ const socialImgs = [
   },
 ];
 
+const expCards = [
+  {
+    title: "Frontend Developer — Softvence Delta",
+    date: "Feb 2026 - Present",
+    imgPath: "/images/softvence_delta.jpeg",
+    logoPath: "/images/softvence_delta.jpeg",
+    responsibilities: [
+      "Architect and ship production-grade web applications with Next.js, leveraging SSR, SSG, and API routes to optimize delivery speed and SEO performance.",
+      "Engineer responsive, accessible UI systems using Tailwind CSS, ShadCN UI, and CSS Modules — ensuring cross-browser consistency and mobile-first design.",
+      "Integrate and orchestrate RESTful APIs with modern data-fetching patterns, reducing client-side latency and improving perceived load times.",
+      "Implement secure authentication flows and route protection strategies, safeguarding user sessions across the application.",
+      "Drive frontend performance optimization — achieving measurable gains in Core Web Vitals, Lighthouse scores, and time-to-interactive metrics.",
+      "Collaborate cross-functionally with backend engineers, designers, and product managers to scope, estimate, and deliver features within sprint timelines.",
+    ],
+  },
+];
+
 export {
   navLinks,
   groupedSkills,
   projects,
+  expCards,
   socialImgs,
 };

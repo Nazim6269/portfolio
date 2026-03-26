@@ -5,6 +5,7 @@ import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
+import Experience from "./sections/Experience";
 
 
 const App = () => (
@@ -13,6 +14,7 @@ const App = () => (
     <Hero />
     <Projects />
     <Skills />
+    <Experience />
     <Contact />
     <Footer />
   </BrowserRouter>

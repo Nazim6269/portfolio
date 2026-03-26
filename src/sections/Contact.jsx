@@ -31,61 +31,61 @@ const Contact = () => {
 
       setForm({ name: "", email: "", message: "" });
     } catch (error) {
-      console.error("EmailJS Error:", error); // Optional: show toast
+      console.error("EmailJS Error:", error);
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <section id="contact" className="flex-center section-padding">
-      <div className="w-full h-full md:px-10 px-5">
+    <section id="contact" className="section-padding max-w-7xl mx-auto">
+      <div className="w-full h-full">
         <TitleHeader
           title="Get in Touch"
           sub="Contact"
         />
-        <div className="mt-10 flex justify-center">
+        <div className="mt-12 flex justify-center">
           <div className="w-full max-w-2xl">
-            <div className="flex-center card-border rounded-xl p-8">
+            <div className="card-border rounded-xl p-6 md:p-8">
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
                 className="w-full flex flex-col gap-5"
               >
                 <div>
-                  <label htmlFor="name">Your name</label>
+                  <label htmlFor="name">Name</label>
                   <input
                     type="text"
                     id="name"
                     name="name"
                     value={form.name}
                     onChange={handleChange}
-                    placeholder="What’s your good name?"
+                    placeholder="Your name"
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email">Your Email</label>
+                  <label htmlFor="email">Email</label>
                   <input
                     type="email"
                     id="email"
                     name="email"
                     value={form.email}
                     onChange={handleChange}
-                    placeholder="What’s your email address?"
+                    placeholder="your@email.com"
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message">Your Message</label>
+                  <label htmlFor="message">Message</label>
                   <textarea
                     id="message"
                     name="message"
                     value={form.message}
                     onChange={handleChange}
-                    placeholder="How can I help you?"
+                    placeholder="Tell me about your project..."
                     rows="5"
                     required
                   />
@@ -93,7 +93,7 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full py-3 rounded-md bg-white text-black text-sm font-medium hover:bg-gray-200 transition-colors duration-200"
+                  className="w-full py-3 rounded-lg bg-white text-black text-sm font-medium hover:bg-gray-100 active:scale-[0.98] transition-all duration-200 mt-1"
                 >
                   {loading ? "Sending..." : "Send Message"}
                 </button>
